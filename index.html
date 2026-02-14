@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Honest Label</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #111111;
+      --muted: #666666;
+      --accent: #000000;
+      --border: #e5e5e5;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 3rem 1.5rem;
+      border-bottom: 1px solid var(--border);
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      letter-spacing: -0.02em;
+    }
+
+    header p {
+      color: var(--muted);
+      margin-top: 0.5rem;
+      font-size: 1rem;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+
+    section {
+      margin-bottom: 4rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.5rem;
+    }
+
+    .reviews {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      padding: 1.2rem;
+    }
+
+    .card h3 {
+      font-size: 1.05rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .rating {
+      margin-top: 0.6rem;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .method ul {
+      list-style: none;
+    }
+
+    .method li {
+      margin-bottom: 0.6rem;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem 1.5rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>The Honest Label</h1>
+    <p>Independent, unpaid reviews. No hype. Just judgment.</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Recent Reviews</h2>
+      <div class="reviews">
+        <div class="card">
+          <h3>E-COSMOS Ice Face Roller</h3>
+          <p>Cooling effect works, but build quality is average.</p>
+          <div class="rating">Rating: 6.5 / 10</div>
+        </div>
+
+        <div class="card">
+          <h3>Shuttle Art Coffee Pen Set</h3>
+          <p>Smooth ink, comfortable grip, great everyday pens.</p>
+          <div class="rating">Rating: 8 / 10</div>
+        </div>
+
+        <div class="card">
+          <h3>Sony WH-1000XM6 Headphones</h3>
+          <p>Excellent noise cancellation, premium price.</p>
+          <div class="rating">Rating: 8 / 10</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="method">
+      <h2>How We Review</h2>
+      <ul>
+        <li>• No sponsorships. Ever.</li>
+        <li>• Products reviewed from a student perspective.</li>
+        <li>• Clear strengths and clear flaws.</li>
+        <li>• Ratings are comparative, not inflated.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 The Honest Label — Student-run, independent project
+  </footer>
+
+</body>
+</html>
