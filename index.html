@@ -4,154 +4,134 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>The Honest Label</title>
-  <style>
-    :root {
-      --bg: #ffffff;
-      --text: #111111;
-      --muted: #666666;
-      --accent: #000000;
-      --border: #e5e5e5;
-    }
 
-    * {
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
-    }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
+      background: #ffffff;
+      color: #111;
       line-height: 1.6;
     }
 
     header {
-      padding: 3rem 1.5rem;
-      border-bottom: 1px solid var(--border);
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.2rem;
-      letter-spacing: -0.02em;
-    }
-
-    header p {
-      color: var(--muted);
-      margin-top: 0.5rem;
-      font-size: 1rem;
-    }
-
-    main {
       max-width: 900px;
-      margin: 0 auto;
-      padding: 3rem 1.5rem;
+      margin: 80px auto 60px;
+      padding: 0 20px;
     }
 
-    section {
-      margin-bottom: 4rem;
+    h1 {
+      font-size: 36px;
+      margin-bottom: 12px;
     }
 
     h2 {
-      font-size: 1.4rem;
-      margin-bottom: 1rem;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 0.5rem;
+      font-size: 24px;
+      margin-bottom: 16px;
     }
 
-    .reviews {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
+    p {
+      color: #444;
+      max-width: 700px;
     }
 
-    .card {
-      border: 1px solid var(--border);
-      padding: 1.2rem;
+    section {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
     }
 
-    .card h3 {
-      font-size: 1.05rem;
-      margin-bottom: 0.4rem;
-    }
-
-    .card p {
-      font-size: 0.9rem;
-      color: var(--muted);
+    .review {
+      margin-bottom: 24px;
     }
 
     .rating {
-      margin-top: 0.6rem;
       font-weight: 600;
-      font-size: 0.9rem;
     }
 
-    .method ul {
+    ul {
       list-style: none;
+      padding: 0;
     }
 
-    .method li {
-      margin-bottom: 0.6rem;
-      font-size: 0.95rem;
+    li {
+      margin-bottom: 8px;
     }
 
     footer {
-      border-top: 1px solid var(--border);
-      padding: 2rem 1.5rem;
-      text-align: center;
-      font-size: 0.85rem;
-      color: var(--muted);
+      max-width: 900px;
+      margin: 80px auto 40px;
+      padding: 0 20px;
+      color: #777;
+      font-size: 14px;
     }
   </style>
 </head>
+
 <body>
 
   <header>
     <h1>The Honest Label</h1>
-    <p>Independent, unpaid reviews. No hype. Just judgment.</p>
+    <p>
+      An independent, student-run product review initiative.
+      No sponsorships. No incentives. No brand influence.
+    </p>
   </header>
 
-  <main>
+  <section>
+    <h2>Recent Reviews</h2>
 
-    <section>
-      <h2>Recent Reviews</h2>
-      <div class="reviews">
-        <div class="card">
-          <h3>E-COSMOS Ice Face Roller</h3>
-          <p>Cooling effect works, but build quality is average.</p>
-          <div class="rating">Rating: 6.5 / 10</div>
-        </div>
+    <div class="review">
+      <strong>Shuttle Art Coffee Theme Pen Set</strong><br/>
+      Smooth writing, comfortable grip, and clean design.
+      <div class="rating">Rating: 8/10</div>
+    </div>
 
-        <div class="card">
-          <h3>Shuttle Art Coffee Pen Set</h3>
-          <p>Smooth ink, comfortable grip, great everyday pens.</p>
-          <div class="rating">Rating: 8 / 10</div>
-        </div>
+    <div class="review">
+      <strong>Sony WH-1000XM6 Headphones</strong><br/>
+      Exceptional noise cancellation and comfort. Premium price limits access.
+      <div class="rating">Rating: 8/10</div>
+    </div>
 
-        <div class="card">
-          <h3>Sony WH-1000XM6 Headphones</h3>
-          <p>Excellent noise cancellation, premium price.</p>
-          <div class="rating">Rating: 8 / 10</div>
-        </div>
-      </div>
-    </section>
+    <div class="review">
+      <strong>Lauret Blanc Undated Planner</strong><br/>
+      Visually appealing but paper quality does not justify the cost.
+      <div class="rating">Rating: 4.5/5</div>
+    </div>
+  </section>
 
-    <section class="method">
-      <h2>How We Review</h2>
-      <ul>
-        <li>• No sponsorships. Ever.</li>
-        <li>• Products reviewed from a student perspective.</li>
-        <li>• Clear strengths and clear flaws.</li>
-        <li>• Ratings are comparative, not inflated.</li>
-      </ul>
-    </section>
+  <section>
+    <h2>Review Archive</h2>
+    <p>
+      A complete, chronological record of all published reviews.
+      All reviews remain public regardless of rating.
+    </p>
 
-  </main>
+    <ul>
+      <li>• E-COSMOS Ice Face Roller — <strong>6.5/10</strong></li>
+      <li>• Shuttle Art Coffee Theme Pen Set — <strong>8/10</strong></li>
+      <li>• Sony WH-1000XM6 Headphones — <strong>8/10</strong></li>
+      <li>• Lauret Blanc Undated Planner — <strong>4.5/5</strong></li>
+      <li>• Kindle Scribe Digital Notebook — <strong>8/10</strong></li>
+      <li>• Month 1 Transparency Report</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>How We Review</h2>
+    <p>
+      Each product is personally used before review and evaluated using a fixed
+      framework: usability, durability, value for money, and design. No products
+      are sponsored, gifted, or promoted. Scores reflect individual experience,
+      not brand reputation.
+    </p>
+  </section>
 
   <footer>
-    © 2026 The Honest Label — Student-run, independent project
+    © The Honest Label — Independent. Unpaid. Student-run.
   </footer>
 
 </body>
 </html>
+
